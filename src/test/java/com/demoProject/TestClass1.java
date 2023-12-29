@@ -29,7 +29,7 @@ public class TestClass1 {
 		caps.setCapability("os", "Windows");
 		caps.setCapability("os_version", "10");
 
-		WebDriver driver = new RemoteWebDriver(
+		driver = new RemoteWebDriver(
 			    new URL("https://jaykhare_Of1lML:DGPyZ3sry9h3NAGUdJ9D@hub-cloud.browserstack.com/wd/hub"),
 			    caps
 			);
@@ -58,7 +58,7 @@ public class TestClass1 {
 	
 	@AfterMethod
 	public void quite() {
-		//driver.quit();
+		driver.quit();
 		//driver.close();
 	}
 }
